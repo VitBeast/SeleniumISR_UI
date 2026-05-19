@@ -13,7 +13,6 @@ def test_go_to_login_page(browser):
     page = Main_Page(browser, link)
     page.open()
     page.go_to_login_page()
-    time.sleep(3)
     # browser.save_screenshot('result5.png')
 
 
@@ -24,9 +23,7 @@ def test_go_to_profile_page(browser):
     page = Main_Page(browser, link)
     page.open()
     page.go_to_click_logo_pets()
-    time.sleep(3)
     page.go_to_profile_page()
-    time.sleep(1)
     # browser.save_screenshot('result_go_to_profile_page.png')
 
 
@@ -37,9 +34,7 @@ def test_go_to_quit(browser):
     page = Main_Page(browser, link)
     page.open()
     page.go_to_click_logo_pets()
-    time.sleep(1)
     page.go_to_quit()
-    time.sleep(3)
     # browser.save_screenshot('result_quit.png')
 
 
@@ -50,27 +45,20 @@ def test_dropdown_by_pets(browser):
     page = Main_Page(browser, link)
     page.open()
     page.go_to_click_logo_pets()
-    time.sleep(1)
     page.go_to_dropdown_by_pets()
-    time.sleep(1)
     page.go_to_dropdown_by_dog()
-    time.sleep(1)
     # browser.save_screenshot('result_dropdown_by_dog')
     page.go_to_dropdown_by_pets()
     page.go_to_dropdown_by_cat()
-    time.sleep(1)
     # browser.save_screenshot('result_dropdown_by_cat')
     page.go_to_dropdown_by_pets()
     page.go_to_dropdown_by_reptile()
-    time.sleep(1)
     # browser.save_screenshot('result_dropdown_by_reptile')
     page.go_to_dropdown_by_pets()
     page.go_to_dropdown_by_hamster()
-    time.sleep(1)
     # browser.save_screenshot('result_dropdown_by_hamster.png')
     page.go_to_dropdown_by_pets()
     page.go_to_dropdown_by_parrot()
-    time.sleep(1)
     # browser.save_screenshot('result_dropdown_by_hamster.png')
 
 
@@ -82,7 +70,6 @@ def test_search_input_name(browser):
     page.open()
     page.go_to_click_logo_pets()
     page.go_to_search_input_name_pets()
-    time.sleep(1)
     # browser.save_screenshot('result_search_input_pets.png')
 
 
@@ -94,7 +81,6 @@ def test_put_like_pet(browser):
     page.open()
     page.go_to_click_logo_pets()
     page.go_to_put_like_pet()
-    time.sleep(3)
     # browser.save_screenshot('result_like_pet.png')
 
 
@@ -108,7 +94,6 @@ def test_add_comment_pet(browser):
     page.go_to_open_pet()
     page.go_add_comment_pet()
     page.go_to_button_save_comment()
-    time.sleep(3)
     # browser.save_screenshot('result_save_comment.png')
 
 
@@ -119,18 +104,13 @@ def test_page_forward_page_backward(browser):
     page = Main_Page(browser, link)
     page.open()
     page.go_to_click_logo_pets()
-    time.sleep(1)
     page.go_to_page_forward()
-    time.sleep(1)
     # browser.save_screenshot('result_page_forward.png')
     page.go_to_page_end()
-    time.sleep(1)
     # browser.save_screenshot('result_page_end.png')
     page.go_to_page_back()
-    time.sleep(1)
     # browser.save_screenshot('result_page_back.png')
     page.go_to_page_start()
-    time.sleep(1)
     # browser.save_screenshot('result_page_start.png')
 
 
