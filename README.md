@@ -9,7 +9,7 @@ It contains UI tests for a pet-related website using pytest.
 
 - Python  
 - Pytest  
-- Selenium (if you use it — если нет, скажи, уберу)  
+- Selenium
 
 ---
 
@@ -79,4 +79,4 @@ pytest -v
 
 ## 👨‍💻 Author
 
-Project created as part of learning test automat
+The project was written by Vitali Katruk
