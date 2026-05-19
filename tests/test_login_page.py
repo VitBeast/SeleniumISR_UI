@@ -16,5 +16,4 @@ def test_go_to_login(browser):
     page.go_to_login()
     page.go_to_password()
     page.go_to_button_click()
-    time.sleep(2)
     # browser.save_screenshot('result_login_page.png')
