@@ -16,7 +16,6 @@ def test_go_to_button_add(browser):
     page = ProfilePage(browser, link)
     page.open()
     page.button_add()
-    # time.sleep(2)
     # browser.save_screenshot('result_button_add.png')
 
 
@@ -26,7 +25,6 @@ def test_go_to_input_name_new_pet(browser):
     page = ProfilePage(browser, link)
     page.open()
     page.create_pet_input_name()
-    # time.sleep(2)
     # browser.save_screenshot('result_input_name_new_pet.png')
 
 
@@ -37,19 +35,15 @@ def test_go_to_dropdown_type_pet(browser):
     page.open()
     page.create_pet_dropdown_type()
     page.create_pet_dropdown_type_dog()
-    # time.sleep(1)
     # browser.save_screenshot('result_dropdown_dog.png')
     page.create_pet_dropdown_type()
     page.create_pet_dropdown_type_cat()
-    # time.sleep(1)
     # browser.save_screenshot('result_dropdown_cat.png')
     page.create_pet_dropdown_type()
     page.create_pet_dropdown_type_reptile()
-    # time.sleep(1)
     # browser.save_screenshot('result_dropdown_reptile.png')
     page.create_pet_dropdown_type()
     page.create_pet_dropdown_type_hamster()
-    # time.sleep(1)
     # browser.save_screenshot('result_dropdown_hamster.png')
 
 
@@ -59,7 +53,6 @@ def test_create_pet_input_age(browser):
     page = ProfilePage(browser, link)
     page.open()
     page.create_pet_input_age()
-    # time.sleep(1)
     # browser.save_screenshot('result_input_age.png')
 
 
@@ -71,11 +64,9 @@ def test_create_pet_dropdown_gender(browser):
     page.create_pet_dropdown_gender()
     # browser.save_screenshot('result_dropdown_gender.png')
     page.create_pet_dropdown_male()
-    # time.sleep(1)
     # browser.save_screenshot('result_dropdown_gender_male.png')
     page.create_pet_dropdown_gender()
     page.create_pet_dropdown_female()
-    # time.sleep(1)
     # browser.save_screenshot('result_dropdown_gender_female.png')
 
 
@@ -85,7 +76,6 @@ def test_create_pet_button_cancel(browser):
     page = ProfilePage(browser, link)
     page.open()
     page.create_pet_button_cancel()
-    # time.sleep(1)
     # browser.save_screenshot('result_button_cancel.png')
 
 
@@ -106,7 +96,6 @@ def test_create_new_pet(browser):
     page.create_new_pet_button_submit()
     page.create_new_pet_button_profile()
     page.create_new_pet_button_edit()
-    # time.sleep(1)
     # browser.save_screenshot('result_new_pet.png')
 
 
@@ -122,7 +111,6 @@ def test_edit_new_pet(browser):
     page.dropdown_new_type_pet_golem()
     page.edit_new_pet_button_add_avatar()
     page.edit_new_pet_button_add_avatar_click()
-    time.sleep(3)
     page.edit_new_pet_golem_button_save()
     # browser.save_screenshot('result_new_avatar.png')
 
@@ -135,5 +123,4 @@ def test_delete_pet_golem_zmey(browser):
     test_go_to_login(browser)
     page.delete_pet_golem()
     page.delete_pet_golem_button_yes()
-    # time.sleep(1)
     # browser.save_screenshot('result_delete_pet_golem.png')
